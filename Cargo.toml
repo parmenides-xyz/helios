@@ -7,6 +7,8 @@ exclude = ["benches"]
 
 [workspace.package]
 version = "0.11.1"
+license = "MIT"
+repository = "https://github.com/parmenides-xyz/helios"
 
 [workspace]
 members = [
@@ -93,8 +95,8 @@ wasmtimer = "0.4.3"
 ######################################
 
 [dependencies]
-helios-common = { path = "./common" }
-helios-core = { path = "./core" }
+helios-common = { package = "phos-helios-common", version = "0.11.1" }
+helios-core = { package = "phos-helios-core", version = "0.11.1" }
 helios-ethereum = { path = "./ethereum" }
 helios-opstack = { path = "./opstack" }
 
@@ -130,6 +132,11 @@ serial_test = "3.0"
 
 [patch.crates-io]
 ethereum_hashing = { git = "https://github.com/ncitron/ethereum_hashing", rev = "7ee70944ed4fabe301551da8c447e4f4ae5e6c35" }
+phos-helios-common = { path = "common" }
+phos-helios-core = { path = "core" }
+phos-helios-revm-utils = { path = "revm-utils" }
+phos-helios-verifiable-api-client = { path = "verifiable-api/client" }
+phos-helios-verifiable-api-types = { path = "verifiable-api/types" }
 
 ######################################
 # Profiles

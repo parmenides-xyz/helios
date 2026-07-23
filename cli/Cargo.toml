@@ -27,8 +27,8 @@ crossterm = "0.27.0"
 chrono = "0.4"
 
 # self crates
-helios-common = { path = "../common" }
-helios-core = { path = "../core" }
+helios-common = { package = "phos-helios-common", version = "0.11.1" }
+helios-core = { package = "phos-helios-core", version = "0.11.1" }
 helios-ethereum = { path = "../ethereum" }
 helios-opstack = { path = "../opstack" }
 helios-linea = { path = "../linea" }

@@ -1,12 +1,15 @@
 [package]
-name = "helios-core"
+name = "phos-helios-core"
 version.workspace = true
 edition = "2021"
+license.workspace = true
+repository.workspace = true
+description = "Core light-client functionality for the Phos Helios fork"
 
 [dependencies]
 # self crates
-helios-common = { path = "../common" }
-helios-verifiable-api-client = { path = "../verifiable-api/client" }
+helios-common = { package = "phos-helios-common", version = "0.11.1" }
+helios-verifiable-api-client = { package = "phos-helios-verifiable-api-client", version = "0.11.1" }
 
 # execution
 alloy = { workspace = true, features = ["rand"] }

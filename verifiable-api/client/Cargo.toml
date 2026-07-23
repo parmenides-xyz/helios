@@ -1,7 +1,10 @@
 [package]
-name = "helios-verifiable-api-client"
+name = "phos-helios-verifiable-api-client"
 version.workspace = true
 edition = "2021"
+license.workspace = true
+repository.workspace = true
+description = "Verifiable API client for the Phos Helios fork"
 
 [dependencies]
 alloy.workspace = true
@@ -16,5 +19,5 @@ tokio.workspace = true
 url.workspace = true
 
 # self crates
-helios-verifiable-api-types = { path = "../types" }
-helios-common = { path = "../../common" }
+helios-verifiable-api-types = { package = "phos-helios-verifiable-api-types", version = "0.11.1" }
+helios-common = { package = "phos-helios-common", version = "0.11.1" }

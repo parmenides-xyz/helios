@@ -1,7 +1,10 @@
 [package]
-name = "helios-verifiable-api-types"
+name = "phos-helios-verifiable-api-types"
 version.workspace = true
 edition = "2021"
+license.workspace = true
+repository.workspace = true
+description = "Verifiable API types for the Phos Helios fork"
 
 [dependencies]
 alloy.workspace = true
@@ -9,4 +12,4 @@ serde.workspace = true
 serde_json.workspace = true
 
 # self crates
-helios-common = { path = "../../common" }
+helios-common = { package = "phos-helios-common", version = "0.11.1" }

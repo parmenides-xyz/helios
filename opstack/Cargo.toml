@@ -45,11 +45,11 @@ snap = "1"
 figment = { version = "0.10.7", features = ["toml", "env"] }
 
 # self crates
-helios-common = { path = "../common" }
-helios-core = { path = "../core" }
+helios-common = { package = "phos-helios-common", version = "0.11.1" }
+helios-core = { package = "phos-helios-core", version = "0.11.1" }
 helios-ethereum = { path = "../ethereum" }
 helios-consensus-core = { path = "../ethereum/consensus-core" }
-helios-revm-utils = { path = "../revm-utils" }
+helios-revm-utils = { package = "phos-helios-revm-utils", version = "0.11.1" }
 
 [target.'cfg(not(target_arch = "wasm32"))'.dependencies]
 # server

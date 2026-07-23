@@ -1,7 +1,10 @@
 [package]
-name = "helios-common"
+name = "phos-helios-common"
 version.workspace = true
 edition = "2021"
+license.workspace = true
+repository.workspace = true
+description = "Common types and utilities for the Phos Helios fork"
 
 [dependencies]
 alloy.workspace = true
